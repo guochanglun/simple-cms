@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/layui.css">
+    <style>
+        .layui-form-item .layui-input-inline{
+            width: 160px;
+            margin-right: 0;
+        }
+        #form{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<form class="layui-form">
+    <div id="form">
+    <div class="layui-form-item">
+        <label class="layui-form-label">资源名</label>
+        <div class="layui-input-inline">
+            <input id="class_name" type="text"  required lay-verify="required" name="class_name" placeholder="比如：Book" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="button" id="add" class="layui-btn layui-btn-primary">添加属性</button>
+            <button class="layui-btn" lay-submit="" lay-filter="model">立即提交</button>
+        </div>
+    </div>
+</form>
+<script src="../static/layui.js"></script>
+<script>
+    layui.use(['form', 'jquery', 'layer'], function () {
+        const form = layui.form;
+        const $ = layui.jquery;
+        const layer = layui.layer;
+
+        $("#add").click(function () {
+            let tag = new Date().getMilliseconds();
+            let temp = `
+            <div class="field-item layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">属性名</label>
+                    <div class="layui-input-inline">
+                        <input type="text" required  lay-verify="required" name="field_name_${tag}" placeholder="属性名" required class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">属性类型</label>
+                    <div class="layui-input-inline">
+                        <select name="field_type_${tag}" lay-verify="required">
+                            <option value="IntegerField">整数</option>
+                            <option value="FloatField">小数</option>
+                            <option value="CharField">字符串</option>
+                            <option value="BooleanField">布尔型</option>
+                            <option value="DateField">日期</option>
+                            <option value="DateTimeField">时间日期</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">能否为空</label>
+                    <div class="layui-input-inline">
+                        <input type="checkbox" checked="" name="field_null_${tag}" lay-skin="switch" lay-filter="switchTest" lay-text="是|否">
+                    </div>
+                </div>
+                <button type="button" class="delete layui-btn layui-btn-danger">删除</button>
+            </div>
+            `;
+            $("#form").append(temp);
+            form.render();
+            $(".delete").click(function () {
+                $(this).parent().remove();
+            });
+        });
+
+        form.on('submit(model)', function(data){
+            {#console.log(data.field);#}
+            layer.open({
+                title: '提示',
+                content:'确定添加模型？',
+                btn: ['确定', '取消'],
+                btn1: function(){
+                    $.post({
+                        'url': '/data',
+                        'data': data.field,
+                        success: function (data) {
+                            layer.msg(data);
+                            if(data === '保存成功'){
+                                $(".field-item").remove();
+                                $("#class_name").val('');
+                            }
+                        }
+                    });
+                    layer.close(layer.index);
+                },
+            });
+            return false;
+        });
+    })
+</script>
+</body>
+</html>
