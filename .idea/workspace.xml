@@ -1,131 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83ff8c36-10b8-4ee0-8da2-c0cf72a147c4" name="Default" comment="simple cms generator">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/cms.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="83ff8c36-10b8-4ee0-8da2-c0cf72a147c4" name="Default" comment="">
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeg/generate_add_code.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeg/generate_edit_code.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeg/generate_model_code.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeg/generate_table_code.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeg/generate_view_code.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeg/utils.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/custom.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/routes.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/setup.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/animate.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/layui.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/layui.mobile.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/modules/code.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/modules/laydate/default/laydate.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/modules/layer/default/icon-ext.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/modules/layer/default/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/modules/layer/default/layer.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/modules/layer/default/loading-0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/modules/layer/default/loading-1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/modules/layer/default/loading-2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/font/iconfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/font/iconfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/font/iconfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/font/iconfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/12.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/13.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/14.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/15.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/16.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/17.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/18.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/19.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/20.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/21.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/22.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/23.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/24.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/25.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/26.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/27.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/28.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/29.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/30.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/31.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/32.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/33.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/34.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/35.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/36.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/37.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/38.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/39.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/40.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/41.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/42.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/43.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/44.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/45.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/46.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/47.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/48.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/49.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/50.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/51.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/52.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/53.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/54.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/55.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/56.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/57.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/58.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/59.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/60.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/61.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/62.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/63.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/64.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/65.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/66.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/67.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/68.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/69.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/70.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/71.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/face/9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/code.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/element.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/flow.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/laydate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/layedit.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/layer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/laypage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/laytpl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/mobile.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/rate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/table.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/tree.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/upload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/lay/modules/util.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/layui.all.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/layui.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/generate_model.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -152,8 +29,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="224">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -476,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534386363297</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="simple cms generator">
+      <created>1534386525279</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1534386525279</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -787,8 +671,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="224">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
