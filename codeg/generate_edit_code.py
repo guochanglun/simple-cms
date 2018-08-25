@@ -75,7 +75,7 @@ def generate_edit_code(data):
                                 contentType: 'application/json',
                                 data: JSON.stringify(data.field),
                                 success: function (data) {
-                                    location = '/book/table';
+                                    location = '/%s/table';
                                 }
                             });
                             layer.close(layer.index);
@@ -87,7 +87,7 @@ def generate_edit_code(data):
         </script>
         </body>
         </html>
-            """ % (inputs, class_name.lower(), script, class_name.lower())
+            """ % (inputs, class_name.lower(), script, class_name.lower(), class_name.lower())
 
 
 def _get_input_type(raw_type):

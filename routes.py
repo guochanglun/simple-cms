@@ -1,9 +1,9 @@
-from flask import Blueprint, render_template, request
-import os
+from flask import Blueprint, render_template, request, redirect, url_for
+import os, time
 
 from flask_peewee.utils import load_class
 
-from codeg.utils import save_code
+from codeg.utils import save_code, del_model
 
 route = Blueprint('route', __name__)
 model_list = [name.split('.')[0] for name in os.listdir('./model') if '.py' in name]
@@ -16,9 +16,24 @@ def index():
 
 
 # 生成模型
+@route.route("/generate_model_del/<name>")
+def generate_model_del(name):
+    del_model(name)
+    return "删除成功"
+
+
+# 生成模型
 @route.route("/generate_model")
 def generate_model():
     return render_template("generate_model.html")
+
+
+# 管理模型
+@route.route("/manage_model")
+def manage_model():
+    # 扫描model文件夹，获取资源名
+    file_list = [name.split('.')[0] for name in os.listdir('./model') if '.py' in name]
+    return render_template("manage_model.html", res=file_list)
 
 
 # 保存模型

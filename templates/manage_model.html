@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理资源</title>
+    <link rel="stylesheet" href="../static/css/layui.css">
+</head>
+<body>
+<table class="layui-table">
+    <thead>
+    <tr>
+        <th>资源名</th>
+        <th>删除</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for re in res  %}
+    <tr>
+        <th>{{ re }}</th>
+        <th><button class="model-del-btn layui-btn layui-btn-danger layui-btn-sm" data-res-name="{{ re }}">删除</button></th>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<script src="../static/layui.js"></script>
+<script>
+layui.use(['layer', 'jquery'], function () {
+    const layer = layui.layer;
+    const $ = layui.jquery;
+
+    $('.model-del-btn').click(function () {
+        const _this = $(this);
+        const name = _this.attr('data-res-name');
+        layer.open({
+                title: '提示',
+                content:'确定删除模型？',
+                btn: ['确定', '取消'],
+                btn1: function(){
+                    $.get('/generate_model_del/' + name);
+                    layer.close(layer.index);
+                    _this.parent().parent().remove();
+                },
+            });
+    });
+})
+</script>
+</body>
+</html>

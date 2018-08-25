@@ -45,7 +45,7 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree" lay-filter="test">
                 {% for model in model_list %}
-                    <li class="layui-nav-item">
+                <li class="layui-nav-item">
                     <a class="" href="javascript:;">{{ model }}</a>
                     <dl class="layui-nav-child">
                         <dd><a class="gcl-tab-item" data-tab-title="查看-{{ model }}" data-template-name="/{{ model.lower() }}/table" href="javascript:;">查看</a></dd>
@@ -53,7 +53,8 @@
                     </dl>
                 </li>
                 {% endfor %}
-                <li class="gcl-tab-item layui-nav-item" data-tab-title="添加资源模型" data-template-name="generate_model"><a href="javascript:">添加资源模型</a></li>
+                <li class="gcl-tab-item layui-nav-item" data-tab-title="添加资源" data-template-name="generate_model"><a href="javascript:">添加资源</a></li>
+                <li class="gcl-tab-item layui-nav-item" data-tab-title="添加资源" data-template-name="manage_model"><a href="javascript:">管理资源</a></li>
             </ul>
         </div>
     </div>

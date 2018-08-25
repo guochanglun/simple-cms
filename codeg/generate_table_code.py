@@ -53,13 +53,13 @@ def generate_table_code(data):
                     });
                 });
             } else if (obj.event === 'edit') {
-                location = '/book/edit/' + data.id
+                location = '/%s/edit/' + data.id
             } else if (obj.event === 'view') {
-                location = '/book/view/' + data.id
+                location = '/%s/view/' + data.id
             }
         });
     });
 </script>
 </body>
 </html>
-    """ % (class_name, ths, class_name)
+    """ % (class_name, ths, class_name, class_name.lower(), class_name.lower())

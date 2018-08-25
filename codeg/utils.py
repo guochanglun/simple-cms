@@ -1,4 +1,6 @@
 # 生成文件
+from flask_peewee.utils import load_class
+
 from codeg.generate_add_code import generate_add_code
 from codeg.generate_edit_code import generate_edit_code
 from codeg.generate_model_code import generate_model_code
@@ -74,3 +76,17 @@ def save_code(data):
     _save_code('table', data)
     _save_code('edit', data)
     _save_code('view', data)
+
+
+# 删除模型、数据库、页面
+def del_model(name):
+    # 删除数据库
+    klass = load_class('model.' + name + '.' + name)
+    klass.drop_table()
+    # 删除类文件
+    os.remove('model/' + name.capitalize() + '.py')
+    # 删除页面文件
+    for file in os.listdir('templates/' + name):
+        os.remove('templates/' + name + '/' + file)
+    # 删除文件夹
+    os.removedirs('templates/' + name)
